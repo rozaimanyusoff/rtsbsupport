@@ -1,8 +1,6 @@
 import React from 'react';
-import brandLogo from '../assets/logo/Ranhill Technologies Logo (Original).png'; // Adjust the path as necessary
 
-const Navbar = ({ userName, userLevel }) => {
-  const brandName = 'RTSB';
+const Navbar = ({brandLogo, brandName, userName, userLevel }) => {
 
   return (
     <header id="page-topbar">
@@ -11,29 +9,29 @@ const Navbar = ({ userName, userLevel }) => {
           <div className="navbar-brand-box">
             <a
               href="https://www.ranhilltechnologies.com.my"
-              class="logo logo-light"
+              className="logo logo-light"
             >
-              <span class="logo-sm">
-                <img
-                  src={brandLogo}
-                  alt="Logo"
-                  className="img-fluid me-2"
-                  style={{ width: "40px", height: "auto" }}
-                />
-              </span>
+                <span className="logo-lg float-start">
+                  <img
+                    src={brandLogo}
+                    alt="Logo"
+                    className="img-fluid"
+                    style={{ width: "40px", height: "auto" }}
+                  />
 
-              <span class="logo-lg float-start">
-                <img
-                  src={brandLogo}
-                  alt="Logo"
-                  className="img-fluid me-2"
-                  style={{ width: "40px", height: "auto" }}
-                />
-                <span class="title-3 align-middle brand-logo"></span>
-                <span class="font-size-24 font-weight-bold text-secondary">
-                  {brandName}
+                  <span className="font-size-24 font-weight-bold text-secondary">
+                    {brandName}
+                  </span>
                 </span>
-              </span>
+
+                <span className="logo-sm">
+                  <img
+                    src={brandLogo}
+                    alt="Logo"
+                    className="img-fluid me-2"
+                    style={{ width: "40px", height: "auto" }}
+                  />
+                </span>
             </a>
           </div>
 
@@ -66,11 +64,11 @@ const Navbar = ({ userName, userLevel }) => {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <img
+              {/* <img
                 className="rounded-circle header-profile-user"
                 src="assets/images/users/avatar-1.jpg"
                 alt="Header Avatar"
-              />
+              /> */}
               <span className="d-none d-xl-inline-block ms-1 fw-light">
                 Welcome {userName}-{userLevel}
               </span>

@@ -10,7 +10,7 @@ const VerticalMenu = ({ permLevel }) => {
       return (
         <>
           <li>
-            <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+            <a href="#" className="has-arrow waves-effect text-decoration-none">
               <i className="mdi mdi-cog-outline mdi-spin"></i>
               <span key="t-dashboard">Admin</span>
             </a>
@@ -24,7 +24,7 @@ const VerticalMenu = ({ permLevel }) => {
             </ul>
           </li>
           <li>
-            <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+            <a href="#" className="has-arrow waves-effect text-decoration-none">
               <i className="mdi mdi-map-marker"></i>
               <span key="t-dashboard">Telemetry Data</span>
             </a>
@@ -38,7 +38,7 @@ const VerticalMenu = ({ permLevel }) => {
             </ul>
           </li>
           <li>
-            <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+            <a href="#" className="has-arrow waves-effect text-decoration-none">
               <i className="mdi mdi-check-box-multiple-outline"></i>
               <span key="t-dashboard">JMS</span>
             </a>
@@ -55,7 +55,7 @@ const VerticalMenu = ({ permLevel }) => {
             </ul>
           </li>
           <li>
-            <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+            <a href="#" className="has-arrow waves-effect text-decoration-none">
               <i className="mdi mdi-cart"></i>
               <span key="t-dashboard">Stock System</span>
             </a>
@@ -79,7 +79,7 @@ const VerticalMenu = ({ permLevel }) => {
     } else if ([34].includes(permLevel)) {
       return (
         <li>
-          <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+          <a href="#" className="has-arrow waves-effect text-decoration-none">
             <i className="mdi mdi-cart"></i>
             <span key="t-dashboard">Stock System</span>
           </a>
@@ -102,7 +102,7 @@ const VerticalMenu = ({ permLevel }) => {
     } else if ([36].includes(permLevel)) {
       return (
         <li>
-          <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+          <a href="#" className="has-arrow waves-effect text-decoration-none">
             <i className="mdi mdi-cart"></i>
             <span key="t-dashboard">Stock System</span>
           </a>
@@ -122,7 +122,7 @@ const VerticalMenu = ({ permLevel }) => {
     } else if ([13].includes(permLevel)) {
       return (
         <li>
-          <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+          <a href="#" className="has-arrow waves-effect text-decoration-none">
             <i className="mdi mdi-cart"></i>
             <span key="t-dashboard">Stock System</span>
           </a>
@@ -136,7 +136,7 @@ const VerticalMenu = ({ permLevel }) => {
     } else if ([37].includes(permLevel)) {
       return (
         <li>
-          <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+          <a href="#" className="has-arrow waves-effect text-decoration-none">
             <i className="mdi mdi-cart"></i>
             <span key="t-dashboard">Stock System</span>
           </a>
@@ -153,7 +153,7 @@ const VerticalMenu = ({ permLevel }) => {
     } else {
       return (
         <li>
-          <a href="javascript:void(0);" className="has-arrow waves-effect text-decoration-none">
+          <a href="#" className="has-arrow waves-effect text-decoration-none">
             <i className="mdi mdi-check-box-multiple-outline"></i>
             <span key="t-dashboard">JMS</span>
           </a>

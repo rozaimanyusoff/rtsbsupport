@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import Menu from './Navbar';
+import Navbar from './Navbar';
 import VerticalMenu from './VerticalMenu';
 
 const App = () => {
-  const [brandLogo, setBrandLogo] = useState('example_logo.png'); // Replace with dynamic value
-  const [brandName, setBrandName] = useState('Your Brand Name'); // Replace with dynamic value
+  const [brandLogo, setBrandLogo] = useState('../assets/logo/Ranhill Technologies Logo (Original).png'); // Replace with dynamic value
+  const [brandName, setBrandName] = useState('RTSB'); // Replace with dynamic value
   const [userName, setUserName] = useState('John Doe'); // Replace with dynamic value
   const [userLevel, setUserLevel] = useState('Admin'); // Replace with dynamic value
   const [permLevel, setPermLevel] = useState(1); // Replace with dynamic value
@@ -22,8 +21,8 @@ const App = () => {
     // setPermLevel(actualPermLevel);
 
     // Simulated fetching
-    setBrandLogo('actual_logo.png');
-    setBrandName('Actual Brand Name');
+    setBrandLogo('../assets/logo/Ranhill Technologies Logo (Original).png');
+    setBrandName('RTSB');
     setUserName('Jane Doe');
     setUserLevel('Super Admin');
     setPermLevel(1); // Set this based on the fetched user permissions
@@ -31,8 +30,7 @@ const App = () => {
 
   return (
     <div>
-      <Header />
-      <Menu brandLogo={brandLogo} brandName={brandName} userName={userName} userLevel={userLevel} />
+      <Navbar brandLogo={brandLogo} brandName={brandName} userName={userName} userLevel={userLevel} />
       <VerticalMenu permLevel={permLevel} />
       <Main />
       <Footer />
