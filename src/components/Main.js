@@ -1,22 +1,21 @@
+// src/components/Main.js
 import React from 'react';
-import Menu from './Navbar';
-import VerticalMenu from './VerticalMenu';
+import Header from './Header';
+import Footer from './Footer';
+import '../Footer.css';
+import '../Main.css';
+import '../Header.css';
 
 const Main = () => {
   return (
-    <div id="layout-wrapper">
-      <Menu />
-      <VerticalMenu />
-      <div className="main-content">
-        <div className="page-content">
-          <div className="container-fluid">
-            <h4 className="mb-sm-3 font-size-18 fw-bold">
-              TEAM DASHBOARD <span id="adminNotice" className="text-danger blink"></span>
-            </h4>
-            <div id="main"></div>
-          </div>
-        </div>
+    <div className="main-container">
+      <Header />
+      <div className="content">
+        {/* Your main page content here */}
+        <h1>Welcome to RTSB Support App</h1>
+        <p>Here you can find information, resources, and support.</p>
       </div>
+      <Footer />
     </div>
   );
 };

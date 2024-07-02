@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// src/components/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Main';
-import Footer from './Footer';
-import Login from './Login';
+import Login from './Login'; // Import the Login component here
 
 const App = () => {
-
   return (
     <Router>
-      <div className='App'>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Main />} />
-          {/* Add other routes here */}
-        </Routes>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} /> {/* Add Login route */}
+        {/* Add other routes here */}
+      </Routes>
     </Router>
   );
 };

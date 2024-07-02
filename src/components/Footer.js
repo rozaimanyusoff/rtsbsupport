@@ -1,22 +1,16 @@
+// src/components/Footer.js
 import React from 'react';
+import reactLogo from '../assets/logo/react-logo.png';
+import '../Footer.css';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className="container-fluid">
-        <div className="row">
-            <div className="col-sm-6 fw-lighter">
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> © RTSP Support Apps
-            </div>
-            <div className="col-sm-6">
-                <div className="text-sm-end d-none d-sm-block fw-lighter">
-                    IT Section
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer className="sticky-bottom bg-light py-1">
+      <div className="container d-flex justify-content-between align-items-center">
+        <span className="fw-bold">RTSB Support App</span>
+        <span className="text-center">&copy; {new Date().getFullYear()}</span>
+        <img src={reactLogo} alt="React Logo" style={{ width: '40px', height: 'auto' }} />
+      </div>
     </footer>
   );
 };
