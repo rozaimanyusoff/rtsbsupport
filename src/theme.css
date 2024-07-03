@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #FFF5EE;
+    --secondary-color: #5BC0DE;
+    --background-color-light: #F8F9FA;
+    --background-color-dark: #343A40;
+    --text-color-light: #212529;
+    --text-color-dark: #F8F9FA;
+    --accent-color: #6C757D;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Header styles */
+nav {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+nav a {
+    color: var(--text-color-light);
+}
+
+.navbar-dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+footer {
+    background-color: var(--primary-color);
+}

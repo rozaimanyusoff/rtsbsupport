@@ -3,9 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import brandLogo from '../assets/logo/Ranhill Technologies Logo (Original).png';
-import '../Footer.css';
+import '../footer.css';
 
-import '../Header.css';
+import '../header.css';
 
 const Login = () => {
   return (

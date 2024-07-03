@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Main';
 import Login from './Login'; // Import the Login component here
+import '../theme.css';
 
 const App = () => {
   return (
