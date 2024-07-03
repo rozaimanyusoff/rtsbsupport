@@ -1,5 +1,4 @@
-// src/components/Header.js
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import brandLogoLight from '../assets/logo/Ranhill Technologies_AllBlack.png';
 import brandLogoDark from '../assets/logo/Ranhill Technologies_ReverseWhite Transparent.png';
@@ -7,16 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../header.css';
 import '../theme.css';
 
-const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+const Header = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <>
