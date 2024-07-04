@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import brandLogoLight from '../assets/logo/Ranhill Technologies_AllBlack.png';
 import brandLogoDark from '../assets/logo/Ranhill Technologies_ReverseWhite Transparent.png';
@@ -25,13 +25,13 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               <a href="#support" className={`${darkMode ? 'text-white' : 'text-black'} hover:text-gray-600`}>Support</a>
             </div>
             <div className="flex items-center space-x-4">
-              <Link to="/login" className={`${darkMode ? 'text-white' : 'text-black'} hover:text-gray-600`}>Sign in</Link>
+              <Link to="/login" className={`${darkMode ? 'text-white' : 'text-black'} hover:text-gray-600`}><i className='fas fa-thin fa-user'></i></Link>
               <button
                 onClick={toggleDarkMode}
-                className="text-white py-1 px-4 rounded-full bg-blue-500 hover:bg-blue-700 focus:outline-none"
+                className="text-white focus:outline"
                 aria-label="Toggle Dark Mode"
               >
-                <i className={`fas ${darkMode ? 'fa-sun' : 'fa-moon'}`}></i>
+                <i className={`fas ${darkMode ? 'fa-regular fa-sun text-light' : 'fa-solid fa-moon text-dark'}`}></i>
               </button>
             </div>
           </div>
