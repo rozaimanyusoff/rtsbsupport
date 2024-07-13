@@ -1,0 +1,47 @@
+.floating-label {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.floating-label input {
+    border: 1px solid #ccc;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.floating-label input.dark-input {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid #666;
+}
+
+.floating-label label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 0.75rem;
+    transition: 0.2s;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #666;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label {
+    top: -0.8rem;
+    left: 0.1rem;
+    font-size: 0.75rem;
+    color: #6C757D;
+}
+
+/* Additional styles for dark mode */
+body.dark-mode .floating-label label {
+    color: #aaa;
+}
+
+body.dark-mode .floating-label input:focus + label,
+body.dark-mode .floating-label input:not(:placeholder-shown) + label {
+    color: white;
+}

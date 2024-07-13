@@ -7,7 +7,7 @@ import '../theme.css';
 const Main = ({ darkMode }) => {
   return (
     <div className={`main-container ${darkMode ? 'dark-mode' : ''}`}>
-      <div className="flex flex-col min-h-screen">
+      <div className={`flex flex-col min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
         <div className="flex-grow flex items-center justify-center">
           <div className="text-center">
             <h1 className={`text-4xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-black'}`}>Welcome to RTSB</h1>

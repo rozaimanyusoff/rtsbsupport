@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import brandLogoLight from '../assets/logo/Ranhill Technologies_AllBlack.png';
 import brandLogoDark from '../assets/logo/Ranhill Technologies_ReverseWhite Transparent.png';
+import Menus from './Menus';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../header.css';
 import '../theme.css';
 
-const Header = ({ darkMode, toggleDarkMode }) => {
+const Header = ({ darkMode, toggleDarkMode, isLoggedIn }) => {
 
   return (
     <>
@@ -19,6 +20,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                 <span className={`ml-2 text-xl font-bold ${darkMode ? 'text-white' : 'text-black'}`}>RTSB</span>
               </a>
             </div>
+            {isLoggedIn && <Menus darkMode={darkMode} />}
             <div className="flex space-x-4">
               <a href="#info" className={`${darkMode ? 'text-white' : 'text-black'} hover:text-gray-600`}>RTSB Info</a>
               <a href="#resources" className={`${darkMode ? 'text-white' : 'text-black'} hover:text-gray-600`}>Resources</a>
